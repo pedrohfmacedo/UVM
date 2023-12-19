@@ -1,0 +1,7 @@
+s1(15Dec2023:18:58:11):  irun ../app/hello.v 
+s2(15Dec2023:18:59:30):  irun ../app/hello.v 
+s3(15Dec2023:19:21:32):  irun ../app/hello.v 
+s4(15Dec2023:19:23:15):  irun ../app/hello.v 
+s5(15Dec2023:19:25:24):  irun -access +r -uvm +uvm_set_config_int=*,recording_detail,1 -coverage all -covoverwrite -DSYSTEM_CLOCK_UNITS_PER_SECOND=100 ../bvm/system_clock.c +incdir+../bvm ../bvm/bvm_pkg.sv dut.sv interface.sv test_pkg.sv top.sv +UVM_VERBOSITY=LOW 
+s6(15Dec2023:19:58:21):  irun -access +r -uvm +uvm_set_config_int=*,recording_detail,1 -coverage all -covoverwrite -DSYSTEM_CLOCK_UNITS_PER_SECOND=100 ../bvm/system_clock.c +incdir+../bvm ../bvm/bvm_pkg.sv dut.sv interface.sv test_pkg.sv top.sv +UVM_VERBOSITY=LOW 
+s7(15Dec2023:20:00:11):  irun -access +r -uvm +uvm_set_config_int=*,recording_detail,1 -coverage all -covoverwrite -DSYSTEM_CLOCK_UNITS_PER_SECOND=100 ../bvm/system_clock.c +incdir+../bvm ../bvm/bvm_pkg.sv dut.sv interface.sv test_pkg.sv top.sv +UVM_VERBOSITY=LOW 

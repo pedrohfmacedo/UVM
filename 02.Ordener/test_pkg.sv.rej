@@ -1,0 +1,19 @@
+*** test_pkg.sv	2017-05-04 11:38:37.148500467 -0300
+--- test_pkg_.sv	2017-05-04 11:42:32.423662679 -0300
+***************
+*** 15,22 ****
+    `include "coverage_in.svh"
+    `include "coverage_out.svh"
+    `include "refmod.svh"
+-   `include "sink.svh"
+-   `include "drain.svh"
+    `include "env.svh"
+    `include "test.svh"
+  
+--- 15,20 ----
+    `include "coverage_in.svh"
+    `include "coverage_out.svh"
+    `include "refmod.svh"
+    `include "env.svh"
+    `include "test.svh"
+  
