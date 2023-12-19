@@ -1,6 +1,6 @@
 # UVM
 
-This repository contains my hardware design functional verification projects using the UVM SystemVerilog or Verilog technique
+This repository contains my hardware design functional verification projects using the methodology UVM SystemVerilog or Verilog technique
 Each project has a folder, where you can find project descriptions and details
 
 #### Software
