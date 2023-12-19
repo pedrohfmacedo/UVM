@@ -1,0 +1,65 @@
+Plano de Verificação UVM para Módulo de Ordenação
+
+    Objetivo:
+        Verificar se o módulo de ordenação ordena corretamente 8 entradas de 8 bits em ordem crescente.
+
+    Configuração do Ambiente de Teste:
+        Configurar o ambiente UVM.
+        Instanciar o módulo de ordenação.
+        Configurar o estímulo e a monitoração.
+
+    Cenários de Teste:
+    a. Teste de Caso Geral:
+        Entradas aleatórias de 8 bits.
+        Verificar se as saídas estão em ordem crescente.
+
+    b. Teste com Dados Repetidos:
+        Entradas com valores repetidos.
+        Garantir que os valores repetidos não afetem a ordem.
+
+    c. Teste com Dados em Ordem Decrescente:
+        Entradas em ordem decrescente.
+        Confirmar se o módulo ordena corretamente.
+
+    d. Teste com Dados em Ordem Crescente:
+        Entradas já ordenadas.
+        Verificar se o módulo mantém a ordem.
+
+    e. Teste com Dados Mínimos e Máximos:
+        Entradas contendo o valor mínimo e máximo possível.
+        Confirmar que o módulo lida corretamente com esses casos extremos.
+
+    Testes de Borda:
+    a. Teste com Dados Mínimos:
+        Entradas com o valor mínimo possível.
+        Verificar a resposta do módulo.
+
+    b. Teste com Dados Máximos:
+        Entradas com o valor máximo possível.
+        Garantir que o módulo pode manipular valores máximos.
+
+    Testes de Desempenho:
+        Avaliar o desempenho do módulo para garantir que ele atenda aos requisitos de tempo.
+
+    Testes de Erro:
+    a. Teste de Overflow:
+        Entradas que causam um overflow.
+        Garantir que o módulo lida com overflow corretamente.
+
+    b. Teste de Underflow:
+        Entradas que causam um underflow.
+        Verificar se o módulo trata underflow adequadamente.
+
+    Relatórios e Cobertura:
+        Gerar relatórios detalhados após cada teste.
+        Monitorar a cobertura do código para garantir uma cobertura abrangente.
+
+    Simulação de Longa Duração:
+        Simular o ambiente por um período prolongado para verificar a estabilidade e identificar possíveis problemas de memória ou vazamentos.
+
+    Revisões Contínuas:
+        Realizar revisões regulares do plano de verificação à medida que novos requisitos surgem ou o design é atualizado.
+
+    Conclusão:
+
+    Fornecer uma conclusão geral sobre a eficácia do teste e se o módulo atende aos requisitos especificados.
