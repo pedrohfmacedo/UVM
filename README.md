@@ -20,7 +20,7 @@ This UVM verification project is a general verification model for any type of ha
 ### Project Overview
 This project performs the verification of a module that organizes 8 8-bit inputs into outputs in an increasing manner, the verification plan is in the folder
 
-## Project 2: UVM - FSM Sequence identifier 0001
+## Project 3: UVM - FSM Sequence identifier 0001
 
 ### Project Overview
 This project performs the FSM (finite state machine) verification used to detect a 4-bit sequence which is the sequence 0001, the verification plan is in the folder
