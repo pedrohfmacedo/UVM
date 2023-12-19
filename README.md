@@ -23,4 +23,4 @@ This project performs the verification of a module that organizes 8 8-bit inputs
 ## Project 3: UVM - FSM Sequence identifier 0001
 
 ### Project Overview
-This project performs the FSM (finite state machine) verification used to detect a 4-bit sequence which is the sequence 0001, the verification plan is in the folder
+This project performs FSM (finite state machine) verification used to detect a 4-bit sequence which is sequence 0001, the verification plan is in the folder. In this project, there was implementation in the EDA PLAYGROUND area and another in the REDHAT environment with Cadence's Xcelium software.
