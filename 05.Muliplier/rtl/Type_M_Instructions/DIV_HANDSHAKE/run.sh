@@ -1,0 +1,1 @@
+xrun div_test.sv -access +rw -input waves.tcl -input restore.tcl
