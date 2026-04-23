@@ -1,0 +1,652 @@
+xrun(64): 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	23.09-s001: Started on Dec 19, 2023 at 14:59:57 -03
+irun
+	-access +r
+	-uvm
+	+uvm_set_config_int=*,recording_detail,1
+	-coverage all
+	-covoverwrite
+	-DSYSTEM_CLOCK_UNITS_PER_SECOND=100 ../bvm/system_clock.c
+	+incdir+../bvm
+	../bvm/bvm_pkg.sv
+	dut.sv
+	interface.sv
+	test_pkg.sv
+	top.sv
+	+UVM_VERBOSITY=LOW
+
+   User defined plus("+") options:
+	+uvm_set_config_int=*,recording_detail,1
+	+UVM_VERBOSITY=LOW
+
+xrun: *W,NCEXDEP: Executable (irun) is deprecated. Use (xrun) instead.
+DEFINE std       ./STD
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+DEFINE std       ./STD
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+DEFINE std       ./STD
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /Tools/cadence/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d
+DEFINE std       ./STD
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+DEFINE std       ./STD
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xmvlog: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+file: ../bvm/bvm_pkg.sv
+	package worklib.bvm_pkg:sv
+		errors: 0, warnings: 0
+file: dut.sv
+	module worklib.dut:sv
+		errors: 0, warnings: 0
+file: interface.sv
+	interface worklib.a_if:sv
+		errors: 0, warnings: 0
+file: test_pkg.sv
+package test_pkg;
+               |
+xmvlog: *W,TSNSPK (test_pkg.sv,4|15): `timescale is not specified for the package.  The default timescale of 1ns/1ns will be assumed for this package.
+	package worklib.test_pkg:sv
+		errors: 0, warnings: 1
+file: top.sv
+      `ifdef INCA
+                |
+xmvlog: *W,SRCDEPR (top.sv,27|16): Indicated Source (INCA) is deprecated. Use (XCELIUM) instead.
+	module worklib.top:sv
+		errors: 0, warnings: 1
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 15
+$CDSROOT = /Tools/cadence/XCELIUM2309
+$TESTDIR = /home/pedro.macedo/Desktop/uvm_finished/UVM_steps/work
+
+TOOL:	xmsc(64)	23.09-s001
+xmsc cc parameters: 
+	$CDSROOT/tools/cdsgcc/gcc/9.3/bin/gcc
+	-DSYSTEM_CLOCK_UNITS_PER_SECOND=100
+	-I$CDSROOT/tools/include
+	-I$CDSROOT/tools/inca/include
+	-I$CDSROOT/tools/methodology/UVM/CDNS-1.1d/sc/sc
+	-I$CDSROOT/tools/methodology/UVM/CDNS-1.1d/ml/sc
+	-pipe 
+	-DXMSC
+	-DNCSC
+	-fPIC
+	-D_GLIBCXX_USE_CXX11_ABI=1 -c
+	-x c  -Wall
+
+xmsc: compiling $TESTDIR/../bvm/system_clock.c
+
+
+building library run.so
+
+DEFINE std       ./STD
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+DEFINE std       ./STD
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xrun: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+DEFINE std       ./STD
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xmelab: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		bvm_pkg
+		test_pkg
+		top
+
+	Extracting FSMs for coverage:
+		worklib.dut
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+DEFINE std       ./STD
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xmvlog_cg: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+		worklib.dut:sv <0x5170af23>
+			streams:   4, words:  1828
+		worklib.top:sv <0x4e166755>
+			streams: 746, words: 771952
+		worklib.bvm_pkg:sv <0x2c54611c>
+			streams:   0, words:     0
+		worklib.cdns_uvm_pkg:sv <0x75215a49>
+			streams: 179, words: 281448
+		worklib.cdns_uvmapi:svp <0x3156e2ee>
+			streams:  27, words: 30300
+		worklib.cdns_assert2uvm_pkg:sv <0x66f81d5a>
+			streams:   3, words:  1763
+		worklib.uvm_pkg:sv <0x12fac537>
+			streams: 5100, words: 7835692
+	Building instance specific data structures.
+xmelab: *W,CGPIDF: Covergroup "per_instance" option , by default, is set as 0.
+xmelab: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       2       2
+		Interfaces:                    2       1
+		Verilog packages:              6       6
+		Registers:                 14149   10234
+		Scalar wires:                  4       -
+		Named events:                  4      12
+		Always blocks:                 1       1
+		Initial blocks:              293     158
+		Parallel blocks:              27      28
+		Pseudo assignments:            2       -
+		Assertions:                    6       6
+		Covergroup Instances:          0       2
+		SV Class declarations:       205     315
+		SV Class specializations:    394     394
+		Process Clocks:                1       1
+	Writing initial simulation snapshot: worklib.top:sv
+DEFINE std       ./STD
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,1): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/STD' (cds.lib command ignored).
+DEFINE synopsys  ./SYNOPSYS
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,2): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/SYNOPSYS' (cds.lib command ignored).
+DEFINE ieee      ./IEEE
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,3): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/IEEE' (cds.lib command ignored).
+DEFINE ambit     ./AMBIT
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,4): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/AMBIT' (cds.lib command ignored).
+DEFINE vital_memory ./VITAL_MEMORY
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,5): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/VITAL_MEMORY' (cds.lib command ignored).
+DEFINE ncutils ./NCUTILS
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,6): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCUTILS' (cds.lib command ignored).
+DEFINE ncinternal ./NCINTERNAL
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,7): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCINTERNAL' (cds.lib command ignored).
+DEFINE ncmodels ./NCMODELS
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,8): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/NCMODELS' (cds.lib command ignored).
+DEFINE xmutils ./XMUTILS
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,9): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMUTILS' (cds.lib command ignored).
+DEFINE xminternal ./XMINTERNAL
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,10): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMINTERNAL' (cds.lib command ignored).
+DEFINE xmmodels ./XMMODELS
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,11): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/XMMODELS' (cds.lib command ignored).
+DEFINE cds_assertions ./CDS_ASSERTIONS
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,12): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_ASSERTIONS' (cds.lib command ignored).
+DEFINE cds_inhconn ./CDS_INHCONN
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,13): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_INHCONN' (cds.lib command ignored).
+DEFINE cds_spicelib ./CDS_SPICELIB
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,14): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_SPICELIB' (cds.lib command ignored).
+DEFINE cds_amsfunctions ./CDS_AMSFUNCTIONS
+|
+xmsim: *W,DLCPTH (/Tools/cadence/XCELIUM2309/tools/inca/files/cdsvhdl.lib,15): cds.lib Invalid path '/Tools/cadence/XCELIUM2309/tools/inca/files/CDS_AMSFUNCTIONS' (cds.lib command ignored).
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xcelium> source /Tools/cadence/XCELIUM2309/tools/xcelium/files/xmsimrc
+xcelium> source /Tools/cadence/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (23.09-s001)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test...
+UVM_INFO @ 0: reporter [UVM_CMDLINE_PROC] Applying config setting from the command line: +uvm_set_config_int=*,recording_detail,1
+SDI/Verilog Transaction Recording Facility Version 23.09-s001
+UVM_INFO ../bvm/bvm_cover.svh(60) @ 35: uvm_test_top.env_h.cover_in_h [coverage_in] Coverage:  0%       
+UVM_INFO ../bvm/bvm_cover.svh(60) @ 45: uvm_test_top.env_h.cover_out_h [coverage_out] Coverage:  0%       
+UVM_INFO ../bvm/bvm_cover.svh(60) @ 65: uvm_test_top.env_h.cover_in_h [coverage_in] Coverage:  0% steady
+UVM_INFO ../bvm/bvm_cover.svh(60) @ 75: uvm_test_top.env_h.cover_out_h [coverage_out] Coverage:  0% steady
+UVM_INFO ../bvm/bvm_cover.svh(60) @ 395: uvm_test_top.env_h.cover_in_h [coverage_in] Coverage: 100%       
+UVM_INFO ../bvm/bvm_cover.svh(60) @ 405: uvm_test_top.env_h.cover_out_h [coverage_out] Coverage: 100%       
+UVM_INFO /Tools/cadence/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 405: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../bvm/bvm_comparator.svh(87) @ 405: uvm_test_top.env_h.comparator_h [bvm_comparator #(a_tr)]          12 matches,           0 mismatches
+UVM_INFO ../bvm/bvm_cover.svh(82) @ 405: uvm_test_top.env_h.cover_in_h [coverage_in] Coverage: 100%
+UVM_INFO ../bvm/bvm_cover.svh(82) @ 405: uvm_test_top.env_h.cover_out_h [coverage_out] Coverage: 100%
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   12
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVM_CMDLINE_PROC]     1
+[bvm_comparator #(a_tr)]     1
+[coverage_in]     4
+[coverage_out]     4
+Simulation complete via $finish(1) at time 405 NS + 45
+/Tools/cadence/XCELIUM2309/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> exit
+xmsim: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_561745a3_7e79668c.ucm
+  data               :  ./cov_work/scope/test/icc_561745a3_7e79668c.ucd
+TOOL:	xrun(64)	23.09-s001: Exiting on Dec 19, 2023 at 15:00:03 -03  (total: 00:00:06)
