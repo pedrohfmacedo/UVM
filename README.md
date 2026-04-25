@@ -1,26 +1,56 @@
 # UVM
 
-This repository contains my hardware design functional verification projects using the methodology UVM SystemVerilog or Verilog technique
-Each project has a folder, where you can find project descriptions and details
+This repository contains hardware functional verification projects developed with SystemVerilog and UVM. The collection starts with smaller training exercises and grows into more complete verification environments for arithmetic blocks integrated into processor-oriented designs.
 
-#### Software
-* EDAPlaygorund (Cadence XCELIUM 20.09)
-* Xcelium 
+## Overview
 
-#### Operational System
-* Linux Redhat
+The projects in this repository cover:
 
-## Project 1: Example UVM model
+- reusable UVM environment structure
+- basic verification exercises
+- FSM verification
+- data-path verification
+- self-checking arithmetic verification with reference models and coverage
 
-### Project Overview
-This UVM verification project is a general verification model for any type of hardware projects, just make the necessary changes to the specification of the DUT to be tested.
+## Tools
 
-## Project 2: UVM - 8-bit 8-input sorter 
+- Cadence Xcelium / `xrun`
+- SystemVerilog
+- UVM
+- Linux / Red Hat based development flow
 
-### Project Overview
-This project performs the verification of a module that organizes 8 8-bit inputs into outputs in an increasing manner, the verification plan is in the folder
+## Projects
 
-## Project 3: UVM - FSM Sequence identifier 0001
+### 00. UVM
 
-### Project Overview
-This project performs FSM (finite state machine) verification used to detect a 4-bit sequence which is sequence 0001, the verification plan is in the folder. In this project, there was implementation in the EDA PLAYGROUND area and another in the REDHAT environment with Cadence's Xcelium software.
+Introductory material and example project structure for learning and organizing UVM-based verification flows.
+
+### 01. UVM_model
+
+A generic UVM model intended as a reusable starting point for new verification environments.
+
+### 02. Ordener
+
+UVM verification project for an 8-input, 8-bit sorter, focused on checking ordered output behavior.
+
+### 03. Sequence_identifier
+
+UVM verification project for an FSM that detects the `0001` sequence, with emphasis on sequence-based control verification.
+
+### 04. Divider_optimization
+
+Verification of a handshake-based 32-bit divider with signed and unsigned operation support, reference-model checking, functional coverage, and UVM-based self-checking flow.
+
+Detailed README:
+[04.Divider_optimization/README.md](/home/xmen/Desktop/meu_git/UVM/04.Divider_optimization/README.md)
+
+### 05. Muliplier
+
+Verification of a handshake-based 32-bit multiplier supporting the RISC-V `M` extension multiplication variants `MUL`, `MULH`, `MULHSU`, and `MULHU`, using UVM agents, reference-model comparison, and coverage collection.
+
+Detailed README:
+[05.Muliplier/README.md](/home/xmen/Desktop/meu_git/UVM/05.Muliplier/README.md)
+
+## Notes
+
+The repository mixes learning-oriented projects and more complete block-level verification environments. As the project numbers increase, the environments become more structured and closer to practical verification flows used for processor and arithmetic IP development.
